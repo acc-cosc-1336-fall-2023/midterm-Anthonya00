@@ -11,12 +11,3 @@ def get_miles_per_hour(KM,MIN):
         MPH = miles/hour
 
         return MPH
-
-
-
-
-
-     
-
-
-
