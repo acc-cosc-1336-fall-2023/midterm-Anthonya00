@@ -1,12 +1,12 @@
 #write function tests here, don't add input('') statements here!
 import unittest
 
-from src.question_b.question_b import is_prime
-from src.question_c.question_c import get_random_number
 
 #follow this example to add questions b, c, and d for testing including their functions
 from src.question_a.question_a import get_miles_per_hour
-
+from src.question_b.question_b import is_prime
+from src.question_c.question_c import get_random_number
+from src.question_d.question_d import Celsius_to_Fahrenheit
 
 class Test_Config(unittest.TestCase):
 #test case for question A
@@ -23,3 +23,7 @@ class Test_Config(unittest.TestCase):
         y = x >= 1 and x <= 5
         self.assertEqual(y,True)
 #test case for question D
+    def test_question_d_config(self):
+        self.assertEqual(Celsius_to_Fahrenheit(0),32)
+        self.assertEqual(Celsius_to_Fahrenheit(5),41)
+        self.assertEqual(Celsius_to_Fahrenheit(10),50)
